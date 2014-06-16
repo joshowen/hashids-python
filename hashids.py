@@ -167,9 +167,9 @@ class Hashids(object):
                            if alphabet.index(x) == i and x not in separators)
 
         len_alphabet, len_separators = len(alphabet), len(separators)
-        if len_alphabet + len_separators < 16:
-            raise ValueError('Alphabet must contain at least 16 '
-                             'unique characters.')
+        # if len_alphabet + len_separators < 16:
+        #     raise ValueError('Alphabet must contain at least 16 '
+        #                      'unique characters.')
 
         separators = _reorder(separators, salt)
 
